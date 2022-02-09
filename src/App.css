@@ -5,3 +5,7 @@ body {
 #entry-box {
   background-color: red;
 }
+
+span {
+  font-weight: bold;
+}

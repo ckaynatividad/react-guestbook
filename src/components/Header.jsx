@@ -6,11 +6,11 @@ export const Header = () => {
   return (
     <header>
       {user ? (
-        <p>
+        <h2>
           signed in as <span>{user}</span>
-        </p>
+        </h2>
       ) : (
-        <p>write in guestbook to sign in</p>
+        <h2>write in guestbook to sign in</h2>
       )}
     </header>
   );

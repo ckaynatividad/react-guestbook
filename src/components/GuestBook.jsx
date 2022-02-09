@@ -23,7 +23,7 @@ export default function GuestBook() {
 
   const guestForm = (
     <div>
-      <label>Guest Name</label>
+      <label>Guest Name: </label>
       <input
         id="guestName"
         type="text"
@@ -36,14 +36,13 @@ export default function GuestBook() {
 
   const displayMsg = user
     ? `thanks ${user}, you can look at other entries if there are any`
-    : 'please sign';
+    : 'please sign guest book';
 
   return (
     <div>
-      <p>{displayMsg}</p>
       <form onSubmit={handleSubmit}>
         {user ? null : guestForm}
-        <label>Guest Entry</label>
+        <label>Guest Entry: </label>
 
         <input
           className="yeah"
@@ -66,6 +65,7 @@ export default function GuestBook() {
           </button>
         )}
       </form>
+      <p>{displayMsg}</p>
     </div>
   );
 }
