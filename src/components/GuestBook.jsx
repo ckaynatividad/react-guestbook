@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useEntries } from '../context/EntryContext';
 import { useUser } from '../context/UserContext';
+import './GuestBook.css';
 
 export default function GuestBook() {
   const [name, setName] = useState('');
@@ -45,8 +46,9 @@ export default function GuestBook() {
         <label>Guest Entry</label>
 
         <input
+          className="yeah"
           type="text"
-          id="entry"
+          id="entry-box"
           value={entry}
           placeholder="Type here"
           onChange={(e) => setEntry(e.target.value)}
@@ -56,7 +58,7 @@ export default function GuestBook() {
           <button
             type="button"
             onClick={() => {
-              setEntries('');
+              setUser('');
               setName('');
             }}
           >
