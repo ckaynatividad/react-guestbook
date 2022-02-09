@@ -23,14 +23,16 @@ export default function GuestBook() {
 
   const guestForm = (
     <div>
-      <label>Guest Name: </label>
-      <input
-        id="guestName"
-        type="text"
-        placeholder="Enter Name"
-        value={name}
-        onChange={(e) => setName(e.target.value)}
-      />
+      <label>
+        Guest Name:
+        <input
+          id="guestName"
+          type="text"
+          placeholder="Enter Name"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+        />
+      </label>
     </div>
   );
 
@@ -42,16 +44,17 @@ export default function GuestBook() {
     <div>
       <form onSubmit={handleSubmit}>
         {user ? null : guestForm}
-        <label>Guest Entry: </label>
-
-        <input
-          className="yeah"
-          type="text"
-          id="entry-box"
-          value={entry}
-          placeholder="Type here"
-          onChange={(e) => setEntry(e.target.value)}
-        />
+        <label>
+          Guest Entry:
+          <input
+            className="yeah"
+            type="text"
+            id="entry-box"
+            value={entry}
+            placeholder="Type here"
+            onChange={(e) => setEntry(e.target.value)}
+          />
+        </label>
         <button type="submit">Submit</button>
         {user && (
           <button
