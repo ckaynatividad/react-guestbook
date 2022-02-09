@@ -1,3 +1,10 @@
+import { Home } from './views/Home';
+import './App.css';
+
 export default function App() {
-  return <h1>Hello World</h1>;
+  return (
+    <div className="App">
+      <Home />
+    </div>
+  );
 }

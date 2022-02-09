@@ -6,7 +6,7 @@ export default function GuestBook() {
   const [name, setName] = useState('');
   const [entry, setEntry] = useState('');
   const { user, setUser } = useUser();
-  const [entries, setEntries] = useEntries();
+  const { entries, setEntries } = useEntries();
 
   function updateList() {
     if (!entry) return;
@@ -22,7 +22,7 @@ export default function GuestBook() {
 
   const guestForm = (
     <div>
-      <label for="guestName">Guest Name</label>
+      <label>Guest Name</label>
       <input
         id="guestName"
         type="text"
@@ -42,9 +42,10 @@ export default function GuestBook() {
       <p>{displayMsg}</p>
       <form onSubmit={handleSubmit}>
         {user ? null : guestForm}
-        <label for="entry">Guest Entry</label>
+        <label>Guest Entry</label>
 
-        <textarea
+        <input
+          type="text"
           id="entry"
           value={entry}
           placeholder="Type here"
@@ -55,7 +56,7 @@ export default function GuestBook() {
           <button
             type="button"
             onClick={() => {
-              setUser('');
+              setEntries('');
               setName('');
             }}
           >
