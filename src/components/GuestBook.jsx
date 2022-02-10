@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useEntries } from '../context/EntryContext';
 import { useUser } from '../context/UserContext';
-import styles from './GuestBook.css';
+import './GuestBook.css';
 
 export default function GuestBook() {
   const [name, setName] = useState('');
@@ -47,7 +47,7 @@ export default function GuestBook() {
         <label>
           Guest Entry:
           <input
-            className={styles.yeah}
+            className="yeah"
             type="text"
             id="entry-box"
             value={entry}
