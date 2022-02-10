@@ -5,76 +5,76 @@ Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <div>
+      <div
+        class="form"
+      >
         <form>
           <div>
             <label>
-              Guest Name:
+              Name:  
               <input
                 id="guestName"
-                placeholder="Enter Name"
                 type="text"
                 value=""
               />
             </label>
           </div>
           <label>
-            Guest Entry:
+            Your Entry: 
             <input
               class="yeah"
               id="entry-box"
-              placeholder="Type here"
               type="text"
               value=""
             />
           </label>
-          <button
-            type="submit"
-          >
-            Submit
-          </button>
-          
+          <p>
+            <button
+              class="submit"
+              type="submit"
+            >
+              Submit
+            </button>
+            
+          </p>
         </form>
-        <p>
-          please sign guest book
-        </p>
       </div>
     </div>
   </body>,
   "container": <div>
-    <div>
+    <div
+      class="form"
+    >
       <form>
         <div>
           <label>
-            Guest Name:
+            Name:  
             <input
               id="guestName"
-              placeholder="Enter Name"
               type="text"
               value=""
             />
           </label>
         </div>
         <label>
-          Guest Entry:
+          Your Entry: 
           <input
             class="yeah"
             id="entry-box"
-            placeholder="Type here"
             type="text"
             value=""
           />
         </label>
-        <button
-          type="submit"
-        >
-          Submit
-        </button>
-        
+        <p>
+          <button
+            class="submit"
+            type="submit"
+          >
+            Submit
+          </button>
+          
+        </p>
       </form>
-      <p>
-        please sign guest book
-      </p>
     </div>
   </div>,
   "debug": [Function],

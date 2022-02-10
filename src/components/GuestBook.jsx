@@ -52,7 +52,11 @@ export default function GuestBook() {
           </label>
         )}
         <p>
-          {!user && <button type="submit">Submit</button>}
+          {!user && (
+            <button className="submit" type="submit">
+              Submit
+            </button>
+          )}
           {user && (
             <button
               type="button"

@@ -12,30 +12,30 @@ test('renders guestbooks in app', () => {
     </UserProvider>
   );
 
-  const header = screen.getByText(/write in guestbook to sign in/i);
+  const header = screen.getByText(/Welcome to Meow's and Meow's Guestbook/i);
   expect(header).toBeInTheDocument();
 
-  const input = screen.getByLabelText(/Guest Entry/i);
+  const input = screen.getByLabelText(/Your Entry/i);
   expect(input).toBeInTheDocument();
 });
 
-test('renders list', () => {
+test('renders signout', () => {
   render(
     <UserProvider>
       <App />
     </UserProvider>
   );
-  const name = screen.getByLabelText(/Guest Name/i);
+  const name = screen.getByLabelText(/Name/i);
   userEvent.type(name, 'meow');
 
-  const entry = screen.getByLabelText(/Guest Entry/i);
+  const entry = screen.getByLabelText(/Your Entry/i);
   userEvent.type(entry, 'meows entry');
 
-  const button = screen.getByRole('button');
+  const button = screen.getByText('Submit');
   userEvent.click(button);
 
-  const msg = screen.getByRole('list');
-  expect(msg).toBeInTheDocument();
+  const signOut = screen.getByText('Not meow?');
+  expect(signOut).toBeInTheDocument();
 });
 
 test('guestbook works', () => {
