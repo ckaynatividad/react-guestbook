@@ -1,8 +1,8 @@
 import React from 'react';
-import { useEntries } from '../context/EntryContext';
-import Entry from './Entry';
+import { useEntries } from '../../context/EntryContext';
 import './Entries.css';
 import FakeEntries from './FakeEntries';
+import Entry from './Entry';
 
 export default function Entries() {
   const { entries } = useEntries();

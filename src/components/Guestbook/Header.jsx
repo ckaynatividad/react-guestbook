@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { ThemeProvider } from 'styled-components';
-import { useUser } from '../context/UserContext';
-import { GlobalStyles } from './Theme/globalStyles';
-import { darkTheme, lightTheme } from './Themes';
+import { useUser } from '../../context/UserContext';
+import { GlobalStyles } from '../Theme/globalStyles';
+import { darkTheme, lightTheme } from '../Theme/Themes';
 
 export const Header = () => {
   const { user } = useUser();
