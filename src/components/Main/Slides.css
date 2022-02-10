@@ -1,7 +1,7 @@
 .slideshow {
   margin: 0 auto;
   overflow: hidden;
-  max-width: 500px;
+  max-width: 1000px;
 }
 .slideshowSlider {
   white-space: nowrap;
@@ -10,7 +10,7 @@
 
 .slide {
   display: inline-block;
-  height: 400px;
+  height: 700px;
   width: 100%;
   border-radius: 40px;
 }

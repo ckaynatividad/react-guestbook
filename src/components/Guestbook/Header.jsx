@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link, NavLink } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 import { useUser } from '../../context/UserContext';
 import { GlobalStyles } from '../Theme/globalStyles';
@@ -24,6 +25,7 @@ export const Header = () => {
         ) : (
           <h2>Welcome to Meow's and Meow's Guestbook</h2>
         )}
+        <NavLink to="/">go back</NavLink>
       </header>
     </ThemeProvider>
   );

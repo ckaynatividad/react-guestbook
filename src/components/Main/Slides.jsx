@@ -34,7 +34,7 @@ export default function Slides({ slides }) {
       >
         {slides.map((slide, index) => (
           <div className="slide" key={index}>
-            <img src={slide.src.medium} />
+            <img src={slide.src.large} />
           </div>
         ))}
       </div>

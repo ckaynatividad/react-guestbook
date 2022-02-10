@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 import { useEntries } from '../../context/EntryContext';
 import { useUser } from '../../context/UserContext';
 import './GuestBook.css';
