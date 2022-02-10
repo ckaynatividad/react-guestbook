@@ -1,3 +1,7 @@
-/* input.yeah {
+.yeah {
   width: 500px;
-} */
+}
+
+#entry-box {
+  background-color: red;
+}

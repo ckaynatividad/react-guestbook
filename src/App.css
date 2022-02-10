@@ -5,3 +5,11 @@ body {
 span {
   font-weight: bold;
 }
+
+.banana {
+  background-color: red;
+}
+
+.hello {
+  color: cyan;
+}
