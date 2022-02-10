@@ -24,11 +24,10 @@ export default function GuestBook() {
   const guestForm = (
     <div>
       <label>
-        Guest Name:
+        Name: &nbsp;
         <input
           id="guestName"
           type="text"
-          placeholder="Enter Name"
           value={name}
           onChange={(e) => setName(e.target.value)}
         />
@@ -36,39 +35,37 @@ export default function GuestBook() {
     </div>
   );
 
-  const displayMsg = user
-    ? `thanks ${user}, you can look at other entries if there are any`
-    : 'please sign guest book';
-
   return (
-    <div>
+    <div className="form">
       <form onSubmit={handleSubmit}>
-        {user ? null : guestForm}
-        <label>
-          Guest Entry:
-          <input
-            className="yeah"
-            type="text"
-            id="entry-box"
-            value={entry}
-            placeholder="Type here"
-            onChange={(e) => setEntry(e.target.value)}
-          />
-        </label>
-        <button type="submit">Submit</button>
-        {user && (
-          <button
-            type="button"
-            onClick={() => {
-              setUser('');
-              setName('');
-            }}
-          >
-            Not {user}?
-          </button>
+        {user ? <p>Your entry has been submitted.</p> : guestForm}
+        {!user && (
+          <label>
+            Your Entry:&nbsp;
+            <input
+              className="yeah"
+              type="text"
+              id="entry-box"
+              value={entry}
+              onChange={(e) => setEntry(e.target.value)}
+            />
+          </label>
         )}
+        <p>
+          {!user && <button type="submit">Submit</button>}
+          {user && (
+            <button
+              type="button"
+              onClick={() => {
+                setUser('');
+                setName('');
+              }}
+            >
+              Not {user}?
+            </button>
+          )}
+        </p>
       </form>
-      <p>{displayMsg}</p>
     </div>
   );
 }

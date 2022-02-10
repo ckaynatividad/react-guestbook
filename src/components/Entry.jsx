@@ -1,10 +1,11 @@
 import React from 'react';
+import './Entry.css';
 
 export default function Entry({ entry: { name, message } }) {
   return (
     <div>
-      <h4>{name}</h4>
-      <p>{message}</p>
+      <p className="msg">"{message}"</p>
+      <p className="name">- {name}</p>
     </div>
   );
 }

@@ -1,0 +1,12 @@
+.msg {
+  letter-spacing: 2.5px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
+  color: rgb(131, 129, 129);
+  margin-top: 50px;
+}
+
+.name {
+  margin-left: 100px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
