@@ -1,0 +1,15 @@
+.entries {
+  width: 300px;
+  margin-left: 60%;
+  animation: example2 3s ease-out;
+}
+/* Move it (define the animation) */
+@keyframes example2 {
+  0% {
+    transform: translateY(200%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+

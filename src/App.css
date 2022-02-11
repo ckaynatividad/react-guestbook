@@ -1,7 +1,21 @@
-body {
+.App {
   text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 span {
   font-weight: bold;
+}
+
+header {
+  margin-top: 5%;
+  margin-left: 2%;
+  position: fixed;
+
+  font-style: italic;
+}
+
+.mode-button {
+  margin-left: -50%;
+  width: 99px;
 }

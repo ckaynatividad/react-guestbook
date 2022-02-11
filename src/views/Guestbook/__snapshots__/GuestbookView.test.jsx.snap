@@ -1,0 +1,254 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`guestbook works 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <button
+        class="mode-button"
+      >
+        Switch Mode
+      </button>
+      <p>
+        <a
+          aria-current="page"
+          class="active"
+          href="/"
+        >
+          go back
+        </a>
+      </p>
+      <header>
+        <h2>
+          Welcome to Meow's and Meow's Guestbook
+        </h2>
+      </header>
+      <div
+        class="fade"
+      >
+        <div
+          class="meow"
+        >
+          <div
+            class="form"
+          >
+            <form>
+              <div>
+                <label>
+                  Name:  
+                  <input
+                    id="guestName"
+                    type="text"
+                    value=""
+                  />
+                </label>
+              </div>
+              <label>
+                Your Entry: 
+                <input
+                  class="yeah"
+                  id="entry-box"
+                  type="text"
+                  value=""
+                />
+              </label>
+              <p>
+                <button
+                  class="submit"
+                  type="submit"
+                >
+                  Submit
+                </button>
+                
+              </p>
+            </form>
+          </div>
+        </div>
+        <div
+          class="entries"
+        >
+          <div>
+            <h2>
+              All Entries
+            </h2>
+            <ul>
+              <p
+                class="msg"
+              >
+                "We love you and are rooting for you."
+              </p>
+              <p
+                class="name"
+              >
+                - Mom and Dad
+              </p>
+              <p
+                class="msg"
+              >
+                "Meow meow meow"
+              </p>
+              <p
+                class="name"
+              >
+                - Meow
+              </p>
+            </ul>
+            <ul
+              class="list"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <button
+      class="mode-button"
+    >
+      Switch Mode
+    </button>
+    <p>
+      <a
+        aria-current="page"
+        class="active"
+        href="/"
+      >
+        go back
+      </a>
+    </p>
+    <header>
+      <h2>
+        Welcome to Meow's and Meow's Guestbook
+      </h2>
+    </header>
+    <div
+      class="fade"
+    >
+      <div
+        class="meow"
+      >
+        <div
+          class="form"
+        >
+          <form>
+            <div>
+              <label>
+                Name:  
+                <input
+                  id="guestName"
+                  type="text"
+                  value=""
+                />
+              </label>
+            </div>
+            <label>
+              Your Entry: 
+              <input
+                class="yeah"
+                id="entry-box"
+                type="text"
+                value=""
+              />
+            </label>
+            <p>
+              <button
+                class="submit"
+                type="submit"
+              >
+                Submit
+              </button>
+              
+            </p>
+          </form>
+        </div>
+      </div>
+      <div
+        class="entries"
+      >
+        <div>
+          <h2>
+            All Entries
+          </h2>
+          <ul>
+            <p
+              class="msg"
+            >
+              "We love you and are rooting for you."
+            </p>
+            <p
+              class="name"
+            >
+              - Mom and Dad
+            </p>
+            <p
+              class="msg"
+            >
+              "Meow meow meow"
+            </p>
+            <p
+              class="name"
+            >
+              - Meow
+            </p>
+          </ul>
+          <ul
+            class="list"
+          />
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
