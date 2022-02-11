@@ -34,7 +34,12 @@ export default function Slides({ slides }) {
       >
         {slides.map((slide, index) => (
           <div className="slide" key={index}>
-            <img src={slide.src.large} />
+            <img
+              src={slide.src.large}
+              onClick={() => {
+                alert(`${slide.alt}`);
+              }}
+            />
           </div>
         ))}
       </div>

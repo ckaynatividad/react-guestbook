@@ -14,7 +14,8 @@ export default function Slideshow() {
   }, []);
 
   return (
-    <div>
+    <div className="fade">
+      <p className="italic">click on slides for details</p>
       <Slides slides={slides} />
     </div>
   );

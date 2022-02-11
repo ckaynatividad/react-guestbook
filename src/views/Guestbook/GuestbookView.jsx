@@ -8,12 +8,14 @@ import './GuestbookView.css';
 export const GuestbookView = () => {
   return (
     <EntryProvider>
-      <div className="meow">
-        <GuestBook />
-      </div>
+      <div className="fade">
+        <div className="meow">
+          <GuestBook />
+        </div>
 
-      <div className="entries">
-        <Entries />
+        <div className="entries">
+          <Entries />
+        </div>
       </div>
     </EntryProvider>
   );

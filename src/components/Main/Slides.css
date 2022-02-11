@@ -31,3 +31,9 @@
 .slideshowDot.active {
   background-color: #0837126b;
 }
+
+.italic {
+  color: gray;
+  font-style: italic;
+  font-size: 8pt;
+}
