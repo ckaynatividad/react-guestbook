@@ -3,6 +3,5 @@ export async function fetchApi() {
     headers: {},
   });
   const data = await resp.json();
-  console.log(data.photos);
   return data.photos;
 }

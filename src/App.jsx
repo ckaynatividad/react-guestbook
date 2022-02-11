@@ -24,7 +24,6 @@ export default function App() {
               <Home />
             </Route>
             <Route path="/guestbook">
-              <Header />
               <GuestbookView />
             </Route>
           </Switch>
