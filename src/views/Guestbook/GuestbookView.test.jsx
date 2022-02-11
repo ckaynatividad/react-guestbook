@@ -1,11 +1,12 @@
 import { render, screen } from '@testing-library/react';
-import { MemoryRouter } from 'react-router-dom';
+import { MemoryRouter, Route } from 'react-router-dom';
 import { EntryProvider } from '../../context/EntryContext';
 import { UserProvider } from '../../context/UserContext';
 import { GuestbookView } from './GuestbookView';
 import userEvent from '@testing-library/user-event';
+import Home from '../Home/Home';
 
-test.skip('renders guestbooks in app', () => {
+test('renders guestbooks in app', () => {
   render(
     <MemoryRouter>
       <UserProvider>
@@ -21,7 +22,7 @@ test.skip('renders guestbooks in app', () => {
   expect(input).toBeInTheDocument();
 });
 
-test.skip('renders signout', () => {
+test('renders signout', () => {
   render(
     <MemoryRouter>
       <UserProvider>
@@ -42,7 +43,7 @@ test.skip('renders signout', () => {
   expect(signOut).toBeInTheDocument();
 });
 
-test.skip('guestbook works', () => {
+test('guestbook works', () => {
   const container = render(
     <MemoryRouter>
       <UserProvider>
@@ -53,4 +54,26 @@ test.skip('guestbook works', () => {
     </MemoryRouter>
   );
   expect(container).toMatchSnapshot();
+});
+
+test('goes back home', () => {
+  render(
+    <MemoryRouter initialEntries={['/guestbook']}>
+      <UserProvider>
+        <Route path="/guestbook">
+          <GuestbookView />
+        </Route>
+      </UserProvider>
+    </MemoryRouter>
+  );
+  const back = screen.getByText('go back');
+  userEvent.click(back);
+  render(
+    <MemoryRouter>
+      <Home />
+    </MemoryRouter>
+  );
+
+  const header = screen.getByText(/Welcome to Meow Meow Wedding Planning/i);
+  expect(header).toBeInTheDocument();
 });

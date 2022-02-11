@@ -17,6 +17,9 @@ export const Header = () => {
       <button className="mode-button" onClick={themeToggler}>
         Switch Mode
       </button>
+      <p>
+        <NavLink to="/">go back</NavLink>
+      </p>
       <header>
         {user ? (
           <h2 className="fade">
@@ -25,7 +28,6 @@ export const Header = () => {
         ) : (
           <h2>Welcome to Meow's and Meow's Guestbook</h2>
         )}
-        <NavLink to="/">go back</NavLink>
       </header>
     </ThemeProvider>
   );

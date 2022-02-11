@@ -2,9 +2,11 @@ import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { MemoryRouter } from 'react-router-dom';
 import App from './App';
+import Slides from './components/Main/Slides';
 import { UserProvider } from './context/UserContext';
+import Home from './views/Home/Home';
 
-test.skip('header renders', async () => {
+test('header renders', async () => {
   render(
     <MemoryRouter>
       <App />
@@ -17,7 +19,7 @@ test.skip('header renders', async () => {
   expect(header).toBeInTheDocument();
 });
 
-test.skip('filtering renders', async () => {
+test('link renders guestbook', async () => {
   render(
     <MemoryRouter>
       <UserProvider>

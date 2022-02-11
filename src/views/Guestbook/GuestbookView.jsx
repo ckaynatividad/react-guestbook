@@ -1,4 +1,3 @@
-import { NavLink } from 'react-router-dom';
 import Entries from '../../components/Guestbook/Entries';
 import GuestBook from '../../components/Guestbook/GuestBook';
 import { Header } from '../../components/Guestbook/Header';

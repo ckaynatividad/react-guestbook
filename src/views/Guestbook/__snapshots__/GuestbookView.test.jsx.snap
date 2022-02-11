@@ -10,10 +10,7 @@ Object {
       >
         Switch Mode
       </button>
-      <header>
-        <h2>
-          Welcome to Meow's and Meow's Guestbook
-        </h2>
+      <p>
         <a
           aria-current="page"
           class="active"
@@ -21,6 +18,11 @@ Object {
         >
           go back
         </a>
+      </p>
+      <header>
+        <h2>
+          Welcome to Meow's and Meow's Guestbook
+        </h2>
       </header>
       <div
         class="fade"
@@ -106,10 +108,7 @@ Object {
     >
       Switch Mode
     </button>
-    <header>
-      <h2>
-        Welcome to Meow's and Meow's Guestbook
-      </h2>
+    <p>
       <a
         aria-current="page"
         class="active"
@@ -117,6 +116,11 @@ Object {
       >
         go back
       </a>
+    </p>
+    <header>
+      <h2>
+        Welcome to Meow's and Meow's Guestbook
+      </h2>
     </header>
     <div
       class="fade"
