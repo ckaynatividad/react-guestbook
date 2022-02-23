@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useHistory } from 'react-router-dom';
 import { Link, NavLink } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 import { useUser } from '../../context/UserContext';
@@ -8,12 +9,13 @@ import { darkTheme, lightTheme } from '../Theme/Themes';
 export const Header = () => {
   const { user, logout } = useUser();
   const [theme, setTheme] = useState('light');
+  const history = useHistory();
   const themeToggler = () => {
     theme === 'light' ? setTheme('dark') : setTheme('light');
   };
 
   const handleLogout = () => {
-    logout(() => history.push('/'));
+    logout(() => history.push('/login'));
   };
 
   return (

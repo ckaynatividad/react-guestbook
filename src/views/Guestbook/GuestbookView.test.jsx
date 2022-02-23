@@ -22,27 +22,6 @@ test('renders guestbooks in app', () => {
   expect(input).toBeInTheDocument();
 });
 
-test('renders signout', () => {
-  render(
-    <MemoryRouter>
-      <UserProvider>
-        <GuestbookView />
-      </UserProvider>
-    </MemoryRouter>
-  );
-  const name = screen.getByLabelText(/Name/i);
-  userEvent.type(name, 'meow');
-
-  const entry = screen.getByLabelText(/Your Entry/i);
-  userEvent.type(entry, 'meows entry');
-
-  const button = screen.getByText('Submit');
-  userEvent.click(button);
-
-  const signOut = screen.getByText('Not meow?');
-  expect(signOut).toBeInTheDocument();
-});
-
 test('guestbook works', () => {
   const container = render(
     <MemoryRouter>
@@ -53,6 +32,7 @@ test('guestbook works', () => {
       </UserProvider>
     </MemoryRouter>
   );
+
   expect(container).toMatchSnapshot();
 });
 

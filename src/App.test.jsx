@@ -27,6 +27,6 @@ test('link renders guestbook', async () => {
   );
   const link = await screen.findByRole('link', { name: /guestbook/i });
   userEvent.click(link);
-  const header = screen.getByText(/Welcome to Meow's and Meow's Guestbook/i);
+  const header = screen.getByText(/login before seeing/i);
   expect(header).toBeInTheDocument();
 });

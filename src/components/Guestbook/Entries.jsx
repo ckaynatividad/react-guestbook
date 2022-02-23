@@ -7,9 +7,7 @@ import { useUser } from '../../context/UserContext';
 
 export default function Entries() {
   const { entries } = useEntries();
-  const {
-    user: { email },
-  } = useUser();
+  const { user } = useUser();
   return (
     <div>
       <h2>All Entries</h2>
@@ -17,7 +15,7 @@ export default function Entries() {
       <ul className="list">
         {entries.map((entry) => {
           return (
-            <div className="fade" key={`"${entry.message} -${email}"`}>
+            <div className="fade" key={`"${entry.message} -${user.email}"`}>
               <Entry entry={entry} />
             </div>
           );

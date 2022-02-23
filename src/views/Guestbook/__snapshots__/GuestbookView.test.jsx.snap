@@ -34,16 +34,6 @@ Object {
             class="form"
           >
             <form>
-              <div>
-                <label>
-                  Name:  
-                  <input
-                    id="guestName"
-                    type="text"
-                    value=""
-                  />
-                </label>
-              </div>
               <label>
                 Your Entry: 
                 <input
@@ -60,7 +50,6 @@ Object {
                 >
                   Submit
                 </button>
-                
               </p>
             </form>
           </div>
@@ -132,16 +121,6 @@ Object {
           class="form"
         >
           <form>
-            <div>
-              <label>
-                Name:  
-                <input
-                  id="guestName"
-                  type="text"
-                  value=""
-                />
-              </label>
-            </div>
             <label>
               Your Entry: 
               <input
@@ -158,7 +137,6 @@ Object {
               >
                 Submit
               </button>
-              
             </p>
           </form>
         </div>
