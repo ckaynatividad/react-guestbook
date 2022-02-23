@@ -4,7 +4,6 @@ const path = require('path');
 const HtmlPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
-
 const env = Object.entries({
   ...require('dotenv').config(),
   ...process.env,
@@ -12,7 +11,6 @@ const env = Object.entries({
   acc[key] = value;
   return acc;
 }, {});
-
 // eslint-disable-next-line
 module.exports = {
   entry: './src/index.jsx',

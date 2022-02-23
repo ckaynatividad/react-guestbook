@@ -4,7 +4,7 @@ export const UserContext = createContext();
 
 const UserProvider = ({ children }) => {
   const [user, setUser] = useState(null);
-
+  console.log(process.env.AUTH_EMAIL);
   const login = (email, password) => {
     const loginSuccessful =
       email === process.env.AUTH_EMAIL &&
