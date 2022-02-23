@@ -6,11 +6,16 @@ import { GlobalStyles } from '../Theme/globalStyles';
 import { darkTheme, lightTheme } from '../Theme/Themes';
 
 export const Header = () => {
-  const { user } = useUser();
+  const { user, logout } = useUser();
   const [theme, setTheme] = useState('light');
   const themeToggler = () => {
     theme === 'light' ? setTheme('dark') : setTheme('light');
   };
+
+  const handleLogout = () => {
+    logout(() => history.push('/'));
+  };
+
   return (
     <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
       <GlobalStyles />
@@ -23,7 +28,8 @@ export const Header = () => {
       <header>
         {user ? (
           <h2 className="fade">
-            Thank you for signing, <span>{user}</span>.
+            Thank you for signing, <span>{user.email}</span>.
+            <button onClick={handleLogout}>Log Out</button>
           </h2>
         ) : (
           <h2>Welcome to Meow's and Meow's Guestbook</h2>
