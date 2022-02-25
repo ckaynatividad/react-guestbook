@@ -22,15 +22,15 @@ export default function App() {
       <div className="App">
         <BrowserRouter>
           <Switch>
-            <Route exact path="/">
-              <Home />
-            </Route>
+            <PrivateRoute exact path="/">
+              <GuestbookView />
+            </PrivateRoute>
             <Route exact path="/login">
               <Login />
             </Route>
-            <PrivateRoute path="/guestbook">
-              <GuestbookView />
-            </PrivateRoute>
+            <Route path="/home">
+              <Home />
+            </Route>
           </Switch>
         </BrowserRouter>
       </div>

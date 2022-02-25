@@ -12,9 +12,7 @@ Object {
       </button>
       <p>
         <a
-          aria-current="page"
-          class="active"
-          href="/"
+          href="/home"
         >
           go back
         </a>
@@ -99,9 +97,7 @@ Object {
     </button>
     <p>
       <a
-        aria-current="page"
-        class="active"
-        href="/"
+        href="/home"
       >
         go back
       </a>

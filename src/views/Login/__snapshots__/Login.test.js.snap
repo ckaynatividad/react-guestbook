@@ -8,7 +8,7 @@ Object {
       <div>
         <h1>
           login before seeing 
-          /guestbook
+          /
         </h1>
         <form>
           <label>
@@ -41,7 +41,7 @@ Object {
     <div>
       <h1>
         login before seeing 
-        /guestbook
+        /
       </h1>
       <form>
         <label>
@@ -131,7 +131,7 @@ Object {
       <div>
         <h1>
           login before seeing 
-          /guestbook
+          /
         </h1>
         <form>
           <label>
@@ -164,7 +164,7 @@ Object {
     <div>
       <h1>
         login before seeing 
-        /guestbook
+        /
       </h1>
       <form>
         <label>

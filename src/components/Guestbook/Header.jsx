@@ -25,7 +25,7 @@ export const Header = () => {
         Switch Mode
       </button>
       <p>
-        <NavLink to="/">go back</NavLink>
+        <NavLink to="/home">go back</NavLink>
       </p>
       <header>
         {user ? (

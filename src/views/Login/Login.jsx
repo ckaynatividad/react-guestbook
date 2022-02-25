@@ -9,7 +9,7 @@ export default function Login() {
   const location = useLocation();
   const auth = useUser();
   const { formState, handleFormChange } = useForm({ email: '', password: '' });
-  const { from } = location.state || { from: { pathname: '/guestbook' } };
+  const { from } = location.state || { from: { pathname: '/' } };
   const [error, setError] = useState(null);
 
   const handleLogin = (e) => {

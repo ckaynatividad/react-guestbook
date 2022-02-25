@@ -6,7 +6,7 @@ export default function Header() {
   return (
     <div className="head">
       <h2>Welcome to Meow Meow Wedding Planning</h2>
-      <NavLink to="/guestbook">Guestbook</NavLink>
+      <NavLink to="/">Guestbook</NavLink>
     </div>
   );
 }
