@@ -8,6 +8,8 @@ import { ThemeProvider } from 'styled-components';
 import { GlobalStyles } from './components/Theme/globalStyles';
 import { darkTheme, lightTheme } from './components/Theme/Themes';
 import { useState } from 'react';
+import Login from './views/Login/Login';
+import PrivateRoute from './components/PrivateRoute';
 
 export default function App() {
   const [theme, setTheme] = useState('light');
@@ -20,11 +22,14 @@ export default function App() {
       <div className="App">
         <BrowserRouter>
           <Switch>
-            <Route exact path="/">
-              <Home />
-            </Route>
-            <Route path="/guestbook">
+            <PrivateRoute exact path="/">
               <GuestbookView />
+            </PrivateRoute>
+            <Route exact path="/login">
+              <Login />
+            </Route>
+            <Route path="/home">
+              <Home />
             </Route>
           </Switch>
         </BrowserRouter>

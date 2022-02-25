@@ -3,9 +3,22 @@ import { createContext, useContext, useMemo, useState } from 'react';
 export const UserContext = createContext();
 
 const UserProvider = ({ children }) => {
-  const [user, setUser] = useState('');
+  const [user, setUser] = useState(null);
+  console.log(process.env.AUTH_EMAIL);
+  const login = (email, password) => {
+    const loginSuccessful =
+      email === process.env.AUTH_EMAIL &&
+      password === process.env.AUTH_PASSWORD;
+    if (loginSuccessful) setUser({ email });
+    return loginSuccessful;
+  };
 
-  const value = useMemo(() => ({ user, setUser }), [user]);
+  const logout = (callback) => {
+    setUser(null);
+    callback();
+  };
+
+  const value = { user, setUser, login, logout };
 
   return <UserContext.Provider value={value}>{children}</UserContext.Provider>;
 };

@@ -2,14 +2,13 @@ import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { MemoryRouter } from 'react-router-dom';
 import App from './App';
-import Slides from './components/Main/Slides';
 import { UserProvider } from './context/UserContext';
 import Home from './views/Home/Home';
 
 test('header renders', async () => {
   render(
     <MemoryRouter>
-      <App />
+      <Home />
     </MemoryRouter>
   );
 
@@ -19,7 +18,7 @@ test('header renders', async () => {
   expect(header).toBeInTheDocument();
 });
 
-test('link renders guestbook', async () => {
+test('goes straight to guest book now', async () => {
   render(
     <MemoryRouter>
       <UserProvider>
@@ -27,8 +26,6 @@ test('link renders guestbook', async () => {
       </UserProvider>
     </MemoryRouter>
   );
-  const link = await screen.findByRole('link', { name: /guestbook/i });
-  userEvent.click(link);
-  const header = screen.getByText(/Welcome to Meow's and Meow's Guestbook/i);
+  const header = screen.getByText(/login before seeing/i);
   expect(header).toBeInTheDocument();
 });
